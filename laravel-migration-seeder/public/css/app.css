@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+h3 {
+  color: rgb(255, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+.container-all-cards {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-card {
+  width: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
