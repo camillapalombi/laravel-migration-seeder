@@ -24,6 +24,7 @@ class CreateTrainsTable extends Migration
             $table->bigInteger('carriagesNumber')->nullable();
             $table->boolean('onTime')->nullable();
             $table->boolean('Cancelled');
+            $table->date('date');
             $table->timestamps();
         });
     }
