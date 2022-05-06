@@ -9,7 +9,8 @@ class PageController extends Controller
 {
     public function index() {
         
-        $myTrains = Train::where('date', '=', date('Y-m-d'))->get();
+        $myTrains = Train::paginate(20);
+        //where('date', '=', date('Y-m-d'))->get();
         
         $data = [
             'trains' => $myTrains
