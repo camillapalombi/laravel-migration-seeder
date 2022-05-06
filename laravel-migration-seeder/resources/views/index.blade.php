@@ -33,7 +33,14 @@
 
 
     </main>
+
+    <footer>
+        <div class="container-pagination">
+            
+            <a href="">{{ $trains->links() }}</a>
+            
+        </div>
+    </footer>
 </body>
 </html>
 
-{{ $trains->links() }}

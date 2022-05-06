@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use App\Train;
@@ -14,7 +13,6 @@ class TrainSeeder extends Seeder
     public function run(Faker $faker)
     {
         for ($i = 1; $i < 650; $i++) { 
-
             $trainData = [
                 'company' => $faker->company(),
                 'departureStation' => $faker->city(),
@@ -27,7 +25,6 @@ class TrainSeeder extends Seeder
                 'cancelled' => $faker->boolean(),
                 'date' => $faker->date()
             ];
-
             $train = new Train();
             $train->fill($trainData);
             $train->save();

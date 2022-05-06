@@ -16,11 +16,11 @@ class CreateTrainsTable extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('company', 50);
-            $table->string('departureStation', 20);
-            $table->string('arrivalStation', 20);
+            $table->string('departureStation', 100);
+            $table->string('arrivalStation', 100);
             $table->time('departureTime');
             $table->time('arrivalTime');
-            $table->string('trainCode',20);
+            $table->string('trainCode',100);
             $table->bigInteger('carriagesNumber')->nullable();
             $table->boolean('onTime')->nullable();
             $table->boolean('Cancelled');
